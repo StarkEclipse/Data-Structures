@@ -37,8 +37,8 @@
 
 def launch(n):
     if n == 0:
-        print("go")
+        print("Blast off!")
         return
-    print("T-minus", n)
-    launch(n - 2)
-launch(10)
+    print(n)
+    launch(n - 1)
+launch(15)
