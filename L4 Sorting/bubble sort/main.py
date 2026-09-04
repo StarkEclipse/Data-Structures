@@ -29,3 +29,18 @@ for i in range(length):
             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
 print(numbers)
+
+def sorter(words):
+    for i in range(1, len(words)):
+        key = words[i]
+        j = i - 1
+        while j >= 0 and len(words[j]) > len(key):
+            words[j + 1] = words[j]
+            j -= 1
+        words[j + 1] = key
+    return words
+
+
+words = ["apple", "kiwi", "banana", "pie", "date"]
+sorted_words = sorter(words)
+print(sorted_words)
