@@ -23,3 +23,16 @@ stack.push("b")
 print(stack.items)
 print(stack.pop())
 print(stack.top())
+
+text = input("Enter a string: ")
+stack = []
+
+for char in text:
+    stack.append(char)
+
+result = ""
+
+while stack:
+    result += stack.pop()
+
+print(result)
